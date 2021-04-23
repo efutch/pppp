@@ -26,4 +26,3 @@ expr	:	'(' expr ')'	{ $$ = $2; }
 	|	expr '/' expr	{ $$ = $1 / $3; }
 	|	NUM			{ $$ = yylval; }
 	;
-

@@ -16,4 +16,3 @@ int yyerror(void)
 	puts("Error en la entrada");
 	return(1);
 }
-
