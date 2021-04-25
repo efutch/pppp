@@ -1,16 +1,14 @@
-// ************************ COMIENZA CALC.L **********************
-
 %{
 #include <stdio.h>
 #include <stdlib.h>
-#include "calc_tab.h"
+#include "calc.tab.h"
 
 extern YYSTYPE yylval;
 
 %}
 
 number  [0-9]
-op      [\+\-\*\\]
+op      [\+\-\*/]
 
 %%
 

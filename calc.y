@@ -24,5 +24,5 @@ expr	:	'(' expr ')'	{ $$ = $2; }
 	|	expr '-' expr	{ $$ = $1 - $3; }
 	|	expr '*' expr	{ $$ = $1 * $3; }
 	|	expr '/' expr	{ $$ = $1 / $3; }
-	|	NUM			{ $$ = yylval; }
+	|	NUM		{ $$ = yylval; }
 	;
